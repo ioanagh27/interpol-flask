@@ -1,0 +1,18 @@
+{% extends 'default.html' %}
+{% block headers %}
+    <!-- <script src="{{  url_for ('static', filename='scripts/flowers.js')}}" defer></script> -->
+{% endblock headers %}
+{% block title %}{{ page_title }}{% endblock title %}
+{% block heading %}Interpol red notices{% endblock heading %}
+{% block content %}
+    <div class="red-notices">
+    {% for notice in notices %}
+        <div class="notice" style="border: 1px dashed rgb(124, 174, 238);">
+            <h2>{{ notice['forename'] }}</h2> 
+            <img src="{{notice['_links']['thumbnail']['href']}}"/>
+            <p>{{ notice['date_of_birth']}}</p>
+            <button>More details</button>
+        </div>            
+    {% endfor %}
+    </div>
+{% endblock content %}

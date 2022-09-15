@@ -1,4 +1,7 @@
 {% extends "default.html" %}
+{% block headers %}
+<link rel="stylesheet" href="{{  url_for ('static', filename='styles/index.css')}}">
+{% endblock headers %}
 {% block title %}Red Notices{% endblock title%}
 {% block heading %}Welcome to Red Notices{% endblock heading%}
-{% block content %}<p>This is a webpage</p>{% endblock content%}
+{% block content %}<button onclick="window.open('./rednotices')">Enter the website</button>{% endblock content%}

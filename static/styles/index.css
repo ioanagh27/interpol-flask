@@ -1,0 +1,25 @@
+    
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 200px;
+    background-image: -webkit-linear-gradient(rgb(173, 235, 173), rgb(76, 76, 238));
+}
+
+
+button {
+    height: 40px;
+    width: auto;
+    color: red;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px red;
+    
+}
+
+button:hover {
+    background-color: transparent;
+}

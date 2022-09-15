@@ -1,0 +1,29 @@
+.red-notices {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.notice {
+    margin: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.notice:hover {
+    background-color: rgb(207, 205, 205);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    color: rgb(103, 103, 241);
+   
+}
+
+

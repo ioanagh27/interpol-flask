@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{  url_for ('static', filename='images/icon.ico')}}">
+    <link rel="stylesheet" href="{{  url_for ('static', filename='styles/default.css')}}">
     <title>{% block title %}{% endblock title%}</title>
 </head>
 <body>
+    
+    <img src="{{  url_for ('static', filename='images/logo.png')}}" class="logo"/>
     <h1>{% block heading %}{% endblock heading%}</h1>
-    <article>
-        {% block content %}{% endblock content%}
-    </article>
+    
+        <article>
+            {% block content %}{% endblock content%}
+        </article>
 </body>
 </html>
