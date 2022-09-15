@@ -5,15 +5,22 @@
 }
 
 .notice {
+    color: white;
     margin: 1rem;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 200px;
+    height: 300px;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgb(7, 7, 7);
 }
 
 .notice:hover {
-    background-color: rgb(207, 205, 205);
+    background-color: transparent;
 }
 
 .logo {
@@ -22,13 +29,38 @@
 }
 
 h1 {
-    color: rgb(103, 103, 241);
+    color: rgb(5, 55, 131);
     text-align: center;
     margin-top: -4rem;   
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 article {
     margin: 10%;
 }
 
+button {
+    width: 100px;
+    color: red;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px red;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+body {
+    background-image: -webkit-linear-gradient(rgb(251, 253, 253), rgb(7, 7, 7));
+}
+
+img {
+    margin: 20px;
+}
+
+.img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(8, 8, 8);
+}
 

@@ -20,5 +20,6 @@ def notice():
     return render_template("rednotices.html", notices=dict["_embedded"]["notices"])
 
 
+
 if __name__ == '__main__':
     app.run(debug = True)

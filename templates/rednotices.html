@@ -8,9 +8,9 @@
 {% block content %}
     <div class="red-notices">
     {% for notice in notices %}
-        <div class="notice" style="border: 1px dashed rgb(1, 48, 109);">
+        <div class="notice" style="border: 2px solid rgb(16, 29, 209);">
             <h2>{{ notice['forename'] }}</h2> 
-            <img src="{{notice['_links']['thumbnail']['href']}}"/>
+            <img class="img" src="{{notice['_links']['thumbnail']['href']}}"/>
             <p>{{ notice['date_of_birth']}}</p>
             <button>More details</button>
         </div>            
