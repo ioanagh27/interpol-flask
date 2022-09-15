@@ -1,5 +1,6 @@
 {% extends 'default.html' %}
 {% block headers %}
+<link rel="stylesheet" href="{{  url_for ('static', filename='styles/default.css')}}">
     <!-- <script src="{{  url_for ('static', filename='scripts/flowers.js')}}" defer></script> -->
 {% endblock headers %}
 {% block title %}{{ page_title }}{% endblock title %}
@@ -7,7 +8,7 @@
 {% block content %}
     <div class="red-notices">
     {% for notice in notices %}
-        <div class="notice" style="border: 1px dashed rgb(124, 174, 238);">
+        <div class="notice" style="border: 1px dashed rgb(1, 48, 109);">
             <h2>{{ notice['forename'] }}</h2> 
             <img src="{{notice['_links']['thumbnail']['href']}}"/>
             <p>{{ notice['date_of_birth']}}</p>
