@@ -64,3 +64,33 @@ img {
     box-shadow: 5px 5px 5px rgb(8, 8, 8);
 }
 
+.container h2 {
+    text-align: center;
+}
+
+.container p {
+    padding: 20px;
+}
+
+.fugitive {
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.image img {
+    width: 300px;
+    height: auto;
+}
+
+.charge {
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,27 @@
+{% extends 'default.html' %}
+{% block headers %}
+<link rel="stylesheet" href="{{  url_for ('static', filename='styles/default.css')}}">
+    <!-- <script src="{{  url_for ('static', filename='scripts/flowers.js')}}" defer></script> -->
+{% endblock headers %}
+{% block title %}{{ page_title }}{% endblock title %}
+{% block heading %}Arrest warrants{% endblock heading %}
+{% block content %}
+    <div class="container">
+        <div class="fugitive" style="border: 2px solid rgb(16, 29, 209);">
+            <h2>{{ fugitive['forename'] }} - {{fugitive['name']}}</h2>
+            <div class="image">                
+                <img class="img" src="{{fugitive['_links']['thumbnail']['href']}}"/>
+            </div>   
+            <br/>          
+            <p class="charge">Charge: {{ fugitive['arrest_warrants'][0]['charge']}}</p>
+            <p>Date of birth: {{ fugitive['date_of_birth']}}</p>
+            <p>Place of birth: {{ fugitive['place_of_birth']}}</p>
+            <p>Entity id: {{ fugitive['entity_id']}}</p>
+            <p>Nationalities: {{ fugitive['nationalities']}}</p>
+            <p>Sex: {{ fugitive['sex_id']}}</p>
+            <p>Distinguishing marks: {{ fugitive['distinguishing_marks']}}</p>            
+            <p>Eyes colour: {{ fugitive['eyes_colors_id']}}</p>
+            
+        </div>            
+    </div>
+{% endblock content %}
